@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>home</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" type="image/x-icon" href="images/favicon.png">
+</head>
+
+<body>
+  <!--banière logo plus menu-->
+  <div class="header">
+    <div class="logo-cliquable"><a href="index.html">
+        <img src="images/logo.png" alt="Logo" class="logo" class="logo-cliquable">
+      </a></div>
+    <div class="menu">
+      <a href="index.html">Accueil</a>
+      <a href="categorie1.html">Art Nouveau</a>
+      <a href="categorie2 .html">Jazz</a>
+      <a href="categorie3.html">Mode</a>
+    </div>
+  </div>
+  <!--bannière art nouveau-->
+  <div class="bannière">
+    <img src="images/artbanner.png" alt="banniere" class="banniere">
+  </div>
+  <!--images en bannière des 3 catégories-->
+  <div class="categories">
+    <div class="categorie"><a href="categorie1.html">
+        <img src="images/Cat1.png" alt="boutoncat1" class="image-cliquable">
+      </a></div>
+    <div class="categorie"><a href="categorie2 .html">
+        <img src="images/cat2.png" alt="boutoncat2" class="image-cliquable">
+      </a></div>
+    <div class="categorie"><a href="categorie3.html">
+        <img src="images/Cat3.png" alt="boutoncat3" class="image-cliquable">
+      </a></div>
+  </div>
+  </div>
+  <!--newsletter-->
+  <div class="newsletter">
+    <h2>Inscription à notre Newsletter </h2>
+    <form action="newsletter.php" method="POST" class="newsletter-forme">
+      <div class="nom-prenom">
+        <input type="text" name="prenom" placeholder="Prénom" required>
+        <input type="text" name="nom" placeholder="Nom" required>
+      </div>
+      <!--date de naissance et email-->
+      <div class="calendrier">
+        <label for="date">Date de naissance</label>
+        <input type="date" name="date" placeholder="date de naissance" required>
+      </div>
+      <input type="text" name="email" placeholder="Adresse mail" required>
+      <!--note du site sur 5-->
+      <div class="note">
+        <label for="choix">note du site :</label>
+        <select id="choix" name="note" required>
+          <option value="" disabled selected>sur 5</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+      </div>
+      <!--bouton-->
+      <button type="submit">S'inscrire</button>
+    </form>
+  </div>
+  <!--footer-->
+  <div class="footer">
+    <h1>Lilou Andrieux</h1>
+  </div>
+</body>
+
+</html>
